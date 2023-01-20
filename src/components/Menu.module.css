@@ -1,0 +1,45 @@
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFF;
+    transition: 0.2s;
+    margin-right: 2em;
+}
+
+ul a:hover{
+    padding: 1em;
+    color: #00BFFF;
+    background-color: #FFF;
+    transition: 0.2s;
+    
+}
+
+.menu span{
+    text-decoration: overline;
+    color: #00BFFF;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.menu span:hover{
+    transition: 0.2s;
+    text-decoration: underline;
+    color: #00BFFF;
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,172 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.753);
+    border-radius: 0.2em;
+    width: 90%;
+    height: 80%;
+    margin-top: 2em;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+}
+
+button,
+input {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.claIntGroup,
+.txtsField {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.txtsField div {
+    display: flex;
+    width: 96%;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.fab {
+    margin-left: 1em;
+}
+
+.dados p {
+    background-color: #00BFFF;
+    color: rgb(0, 0, 0);
+    border-radius: 0.3em;
+    padding: 0.2em;
+    width: 100%;
+    font-weight: bold;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+}
+
+.data .dataGroup {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.dataGroup div {
+    width: 100%;
+}
+
+.dataGroup label {
+    width: 100%;
+    margin-left: 1em;
+}
+
+.atual {
+    background-color: #00BFFF;
+    margin-left: 1em;
+    padding-right: 1em;
+    border-radius: 1em;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+}
+
+.imageChip {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5em;
+}
+
+
+.alagamentos {
+    display: flex;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.menuMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px black;
+}
+
+.menuMain ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+.menuMain ul li {
+    display: flex;
+    margin: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transform: scale(1, 1);
+    transition: 0.2s;
+}
+
+.menuMain ul li:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.2s;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+
+
+@media (max-width: 610px) {
+    .claIntGroup {
+        flex-direction: column;
+    }
+
+    .txtsField {
+        flex-direction: column;
+    }
+
+    .txtsField div {
+        width: 100%;
+    }
+
+    .dataGroup {
+        flex-direction: column;
+    }
+
+    .dataGroup label {
+        width: 40%;
+    }
+
+    .menuMain ul li span {
+        display: none;
+    }
+
+    .icon{
+        font-size: x-large;
+    }
+
+    .menuMain{
+        width: 100%;
+    }
+
+
+}
