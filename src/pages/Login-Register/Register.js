@@ -68,8 +68,8 @@ function Register() {
                 <div className={styles.inputGroup}>
                     <KeyIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
                     <div className={styles.confirmSenha}>
-                        <TextField value={senha} id="input-password" label="Senha" variant="standard" className={styles.inputPassword} onChange={(e) => setSenha(e.target.value)} />
-                        <TextField value={confirmSenha} id="input-confirm-password" label="Confirme a senha" variant="standard" className={styles.inputPassword} onChange={(e) => setConfirmSenha(e.target.value)} />
+                        <TextField value={senha} id="input-password" type='password' label="Senha" variant="standard" className={styles.inputPassword} onChange={(e) => setSenha(e.target.value)} />
+                        <TextField value={confirmSenha} id="input-confirm-password" type="password" label="Confirme a senha" variant="standard" className={styles.inputPassword} onChange={(e) => setConfirmSenha(e.target.value)} />
                     </div>
                 </div>
                 <div className={styles.inputGroup}>
