@@ -86,7 +86,7 @@ function Home() {
       }
     }
     fetchData()
-  }, [loading, setAlagamentos, scene])
+  }, [loading, setAlagamentos, scene, alagamentos])
 
   function handleClose() {
     setOpen(false)
@@ -108,7 +108,6 @@ function Home() {
 
   async function handleSubmit() {
     setLoading(true)
-    console.log(typeof intensidade);
     if ((cep.trim().length === 0) || (bairro.trim().length === 0) || (endereco.trim().length === 0) || (referencia.trim().length === 0)) {
       enqueueSnackbar('Todos os campos são Obrigatórios', { variant: 'error', autoHideDuration: 1500 })
     } else if (cep.trim().length !== 8) {
