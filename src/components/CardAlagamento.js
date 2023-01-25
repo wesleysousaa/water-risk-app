@@ -61,15 +61,15 @@ function CardAlagamento({ a }) {
         <span>{formatDataString(a.a.data)}</span>
       </CardContent>
       <CardActions>
-        <Button size="small"><Link className={styles.seeMore} to={`/alagamento/${a.a.idalagamento}`}>Ver mais</Link></Button>
+        <Link className={styles.seeMore} to={`/alagamento/${a.a.idalagamento}`}><Button size="small">Ver mais</Button></Link>
         {user && a.a.idusuario === user.idusuario &&
-          <Button
-            size="small"
-            onClick={removeAlagamento}>
-            <Link to='/' className={styles.remove} >
+          <Link to='/' className={styles.remove} >
+            <Button
+              size="small"
+              onClick={removeAlagamento}>
               Excluir
-            </Link>
-          </Button>}
+            </Button>
+          </Link>}
       </CardActions>
     </Card>
   )
