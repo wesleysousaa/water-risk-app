@@ -38,12 +38,12 @@ function Alagamento() {
             {alagamento ? (
                 <>
                     <div className={styles.info}>
-                        <Link to='/' className={styles.back}>
-                            <Button>
+                        <Button>
+                            <Link to='/' className={styles.back}>
                                 <ArrowBackIosIcon fontSize='small' />
                                 Voltar
-                            </Button>
-                        </Link>
+                            </Link>
+                        </Button>
                         <h1 className={styles.campo}><InfoIcon />Informações</h1>
                         <div className={styles.localizacao}>
                             <div className={styles.campo}>
@@ -79,7 +79,7 @@ function Alagamento() {
                             <h3>{formatDataString(alagamento.data)}</h3>
                         </div>
                     </div>
-
+                    
                     <div className={styles.imageList}>
                         <h1 className={styles.images}>Imagens</h1>
                         <>
